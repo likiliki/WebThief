@@ -1,15 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.16.1 -->
 <interface>
+  <requires lib="gtk+" version="3.0"/>
   <!-- interface-requires about_webthief_dialog 1.0 -->
-  <!-- interface-requires gtk+ 3.0 -->
   <object class="AboutWebthiefDialog" id="about_webthief_dialog">
     <property name="can_focus">False</property>
     <property name="border_width">5</property>
     <property name="icon">../media/webthief.svg</property>
     <property name="type_hint">normal</property>
     <property name="program_name">Webthief</property>
-    <property name="authors"></property>
+    <property name="copyright" translatable="yes">LikiLiki-2015-WebThief</property>
+    <property name="comments" translatable="yes">Light Web Browser, With tools for stract multiple tags of webSites.</property>
+    <property name="website">http://likiworld.blogspot.es</property>
+    <property name="website_label" translatable="yes">LikiWorld</property>
+    <property name="license" translatable="yes">This file is part of WEBTHIEF.
+    WEBTHIEF is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    WEBTHIEF is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with WEBTHIEF.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</property>
+    <property name="authors">LikiLiki&lt;sefirothonu@gmail.com&gt;</property>
     <property name="logo">../media/webthief.svg</property>
+    <property name="wrap_license">True</property>
+    <property name="license_type">custom</property>
     <child internal-child="vbox">
       <object class="GtkBox" id="dialog-vbox1">
         <property name="visible">True</property>

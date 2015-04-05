@@ -1,0 +1,8 @@
+[Desktop Entry]
+_Name=Webthief
+_Comment=Webthief application
+Categories=GNOME;Utility;
+Exec=webthief
+Icon=webthief
+Terminal=false
+Type=Application

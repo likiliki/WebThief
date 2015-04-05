@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-04-05 12:27+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/ui/WebthiefWindow.ui.h:1 ../webthief.desktop.in.h:1
+msgid "Webthief"
+msgstr ""
+
+#: ../data/ui/WebthiefWindow.ui.h:2
+msgid "_File"
+msgstr ""
+
+#: ../data/ui/WebthiefWindow.ui.h:3
+msgid "_Edit"
+msgstr ""
+
+#: ../data/ui/WebthiefWindow.ui.h:4
+msgid "_Herramientas"
+msgstr ""
+
+#: ../data/ui/WebthiefWindow.ui.h:5
+msgid "Sacar Imagenes"
+msgstr ""
+
+#: ../data/ui/WebthiefWindow.ui.h:6
+msgid "_Help"
+msgstr ""
+
+#: ../data/ui/WebthiefWindow.ui.h:7
+msgid "Contents"
+msgstr ""
+
+#: ../data/ui/WebthiefWindow.ui.h:8
+msgid "Inicio"
+msgstr ""
+
+#: ../data/ui/WebthiefWindow.ui.h:9
+msgid "Recargar"
+msgstr ""
+
+#: ../data/ui/WebthiefWindow.ui.h:10
+msgid "Status Area"
+msgstr ""
+
+#: ../webthief.desktop.in.h:2
+msgid "Webthief application"
+msgstr ""
+
+#: ../webthief/__init__.py:32
+msgid "Show debug messages (-vv debugs webthief_lib also)"
+msgstr ""
+
+#: ../data/ui/AboutWebthiefDialog.ui.h:1
+msgid "LikiLiki-2015-WebThief"
+msgstr ""
+
+#: ../data/ui/AboutWebthiefDialog.ui.h:2
+msgid "Light Web Browser, With tools for stract multiple tags of webSites."
+msgstr ""
+
+#: ../data/ui/AboutWebthiefDialog.ui.h:3
+msgid "LikiWorld"
+msgstr ""
+
+#: ../data/ui/AboutWebthiefDialog.ui.h:4
+msgid ""
+"This file is part of WEBTHIEF.\n"
+"    WEBTHIEF is free software: you can redistribute it and/or modify\n"
+"    it under the terms of the GNU General Public License as published by\n"
+"    the Free Software Foundation, either version 3 of the License, or\n"
+"    (at your option) any later version.\n"
+"\n"
+"    WEBTHIEF is distributed in the hope that it will be useful,\n"
+"    but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"    GNU General Public License for more details.\n"
+"\n"
+"    You should have received a copy of the GNU General Public License\n"
+"    along with WEBTHIEF.  If not, see <http://www.gnu.org/licenses/>."
+msgstr ""
+
+#: ../data/ui/PreferencesWebthiefDialog.ui.h:1
+msgid "Webthief Preferences"
+msgstr ""
+
+#: ../data/ui/PreferencesWebthiefDialog.ui.h:2
+msgid "_Example entry:"
+msgstr ""

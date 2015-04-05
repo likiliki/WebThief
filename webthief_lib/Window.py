@@ -68,7 +68,7 @@ class Window(Gtk.Window):
             pass
 
     def on_mnu_contents_activate(self, widget, data=None):
-        show_uri(self, "ghelp:%s" % get_help_uri())
+        show_uri(self, "ghelp:%s" % get__uri())
 
     def on_mnu_about_activate(self, widget, data=None):
         """Display the about box for webthief."""

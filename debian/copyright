@@ -1,0 +1,8 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: webthief
+Upstream-Contact: UNKNOWN <UNKNOWN>
+Source: UNKNOWN
+
+Files: *
+Copyright: (C) 2015 <Liki Liki> <sefirothonu@gmail.com>
+License: UNKNOWN

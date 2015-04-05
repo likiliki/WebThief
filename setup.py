@@ -1,8 +1,18 @@
 #!/usr/bin/env python
 # -*- Mode: Python; coding: utf-8; indent-tabs-mode: nil; tab-width: 4 -*-
-### BEGIN LICENSE
-# This file is in the public domain
-### END LICENSE
+# This file is part of WEBTHIEF.
+#    WEBTHIEF is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    WEBTHIEF is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with WEBTHIEF.  If not, see <http://www.gnu.org/licenses/>.
 
 ###################### DO NOT TOUCH THIS (HEAD TO THE SECOND PART) ######################
 
@@ -126,12 +136,12 @@ class InstallAndUpdateDataDirectory(DistUtilsExtra.auto.install_auto):
 DistUtilsExtra.auto.setup(
     name='webthief',
     version='0.1',
-    #license='GPL-3',
-    #author='Your Name',
-    #author_email='email@ubuntu.com',
-    #description='UI for managing …',
-    #long_description='Here a longer description',
-    #url='https://launchpad.net/webthief',
+    license='GPL-3',
+    author='Liki Liki',
+    author_email='sefirothonu@gmail.com',
+    description='Light Web Browser, With tools for stract multiple tags of webSites.',
+    long_description='Light Web Browser, With tools for stract multiple tags of webSites.',
+    url='http://likiworld.blogspot.es',
     cmdclass={'install': InstallAndUpdateDataDirectory}
     )
 

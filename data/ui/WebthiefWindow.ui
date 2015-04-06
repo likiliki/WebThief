@@ -4,11 +4,6 @@
   <requires lib="gtk+" version="3.0"/>
   <!-- interface-requires webthief_window 1.0 -->
   <!-- interface-local-resource-path ../media -->
-  <object class="GtkImage" id="image2">
-    <property name="visible">True</property>
-    <property name="can_focus">False</property>
-    <property name="stock">gtk-help</property>
-  </object>
   <object class="WebthiefWindow" id="webthief_window">
     <property name="width_request">800</property>
     <property name="height_request">600</property>
@@ -207,17 +202,6 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <child>
-                      <object class="GtkImageMenuItem" id="mnu_contents">
-                        <property name="label" translatable="yes">Contents</property>
-                        <property name="use_action_appearance">False</property>
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="image">image2</property>
-                        <property name="use_stock">False</property>
-                        <accelerator key="F1" signal="activate"/>
-                      </object>
-                    </child>
-                    <child>
                       <object class="GtkImageMenuItem" id="mnu_about">
                         <property name="label">gtk-about</property>
                         <property name="use_action_appearance">False</property>
@@ -234,6 +218,7 @@
                         <property name="can_focus">False</property>
                         <property name="label" translatable="yes">Ayuda de WebThief</property>
                         <property name="use_underline">True</property>
+                        <accelerator key="F1" signal="activate"/>
                       </object>
                     </child>
                   </object>
@@ -272,6 +257,32 @@
                 <property name="label" translatable="yes">Recargar</property>
                 <property name="use_underline">True</property>
                 <property name="stock_id">gtk-refresh</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="homogeneous">True</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkToolButton" id="botonAtras">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Atras</property>
+                <property name="use_underline">True</property>
+                <property name="stock_id">gtk-go-back</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="homogeneous">True</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkToolButton" id="botonAdelante">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">Siguiente</property>
+                <property name="use_underline">True</property>
+                <property name="stock_id">gtk-go-forward</property>
               </object>
               <packing>
                 <property name="expand">False</property>

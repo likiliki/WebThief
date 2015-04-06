@@ -14,6 +14,8 @@
     <property name="gravity">center</property>
     <child>
       <object class="GtkVBox" id="vbox1">
+        <property name="width_request">800</property>
+        <property name="height_request">600</property>
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <child>
@@ -319,18 +321,43 @@
             <property name="can_focus">False</property>
             <property name="spacing">2</property>
             <child>
-              <object class="GtkLabel" id="label2">
+              <object class="GtkLabel" id="status">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
+                <property name="margin_right">114</property>
                 <property name="xalign">0</property>
                 <property name="xpad">5</property>
                 <property name="ypad">5</property>
-                <property name="label" translatable="yes">Status Area</property>
+                <property name="label" translatable="yes">http://google.es</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkProgressBar" id="pbar">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="margin_left">2</property>
               </object>
               <packing>
                 <property name="expand">True</property>
                 <property name="fill">True</property>
-                <property name="position">0</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="porcent">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">0%</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">3</property>
               </packing>
             </child>
           </object>

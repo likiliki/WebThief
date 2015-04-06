@@ -27,10 +27,11 @@ from webthief.AyudaDialog import AyudaDialog
 # Variables
 URL = "http://google.es"
 URLfija = "http://google.es"
+file_html = os.path.dirname(__file__) + "/for_finder.html"
 
 # See webthief_lib.Window.py for more details about how this class works
 class WebthiefWindow(Window):
-    __gtype_name__ = "WebthiefWindow"
+    __gtype_name__ = "WebthiefWindow"    
     
     def finish_initializing(self, builder): # pylint: disable=E1002
         """Set up the main window"""
@@ -45,37 +46,72 @@ class WebthiefWindow(Window):
         self.scrolledwindow = self.builder.get_object('scrolledwindow')
         self.toolImg = self.builder.get_object('toolImg')
         self.toolbar1 = self.builder.get_object('toolbar1')   
-        self.botonAtras = self.builder.get_object('botonAtras')         
+        self.botonAtras = self.builder.get_object('botonAtras')      
+        self.status = self.builder.get_object('status')    
+        self.pbar = self.builder.get_object('pbar')  
+        self.porcent = self.builder.get_object('porcent')  
         
         # Configuracion inicial de objetos------------------------------------
         # Web View in ScrollerWindow
+        self.entryUrl.set_text(URL)
         self.webview = WebKit.WebView()
         self.scrolledwindow.add(self.webview)
         self.webview.show()
         self.webview.open(URL)
 
+        # ACCIONES DEL WEBVIEW - conexion - line 71
+        self.webview.connect('load-started',self._load_start)
+		self.webview.connect('load-progress-changed',self._load_progress_changed)
+        self.webview.connect('load-finished',self._carga_acabada)
+        # self.webview.connect('hovering-over-link',self._hover_link)
+
         # establecer tema
         context = self.toolbar1.get_style_context()
         context.add_class(Gtk.STYLE_CLASS_PRIMARY_TOOLBAR)
+    
+# ACCIONES DEL WEBVIEW - utilizacion ---------------------------------------------
+    # comienzo de carga
+    def _load_start(self, view, nadas):
+        au = view.get_uri()
+        self.porcent.set_text('0%')
+		self.status.set_text('Cargando...' + au)
+		self.pbar.set_fraction(0)
+    
+    # cambio de proceso de carga
+	def _load_progress_changed(self, view, prog):
+        auxi = view.get_uri()
+        num = prog/100.0
+		self.pbar.set_fraction(num)
+        self.porcent.set_text(str(num * 100) + '%')
+        self.status.set_text('Cargando: ' + str(auxi))
 
-    # funciones propias------------------------------------------
+    # _carga_acabada
+    def _carga_acabada(self, view, vacio):
+        auxil = view.get_uri()
+		self.pbar.set_fraction(0)
+        self.porcent.set_text('100%')
+		self.status.set_text('Finalizado: ' + auxil)
+
+# funciones propias------------------------------------------
     # Signal - BotonInicioClicked
-    def on_botonInicio_clicked(self, widget):
-    	# print "boton Home"        
+    def on_botonInicio_clicked(self, widget):   
     	self.webview.open(URLfija)        
 
     # Signal - BotonRecargaClicked
     def on_botonRecarga_clicked(self, widget):
-    	# print "boton Recargar"
     	self.webview.reload()
 
     # Signal - Sacar Imagenes
     def on_toolImg_activate(self, widget):
-    	print "Boton Saca Imagenes"         
+    	print "Boton Saca Imagenes"               
     
     # signal - Navegar Hacia URL
     def on_entryUrl_activate(self, widget):        
-        URL = "http://" + widget.get_text()
+        URL = widget.get_text()
+        # Agregar http://
+		if URL[0:7] != "http://":
+			URL = "http://" + URL
+		self.status.set_text(URL)
         self.webview.open(URL)
 
     # Mostrar ayuda
@@ -92,4 +128,3 @@ class WebthiefWindow(Window):
     def on_botonAdelante_clicked(self, widget):        
         if self.webview.can_go_forward():      
             self.webview.go_forward()
-        

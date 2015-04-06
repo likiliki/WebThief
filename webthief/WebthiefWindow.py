@@ -87,9 +87,10 @@ class WebthiefWindow(Window):
     # _carga_acabada
     def _carga_acabada(self, view, vacio):
         auxil = view.get_uri()
-		self.pbar.set_fraction(0)
+		self.pbar.set_fraction(100)
         self.porcent.set_text('100%')
 		self.status.set_text('Finalizado: ' + auxil)
+        self.entryUrl.set_text(auxil)
 
 # funciones propias------------------------------------------
     # Signal - BotonInicioClicked

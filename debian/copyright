@@ -1,8 +1,10 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: webthief
-Upstream-Contact: UNKNOWN <UNKNOWN>
-Source: UNKNOWN
+Upstream-Contact: Liki Liki <sefirothonu@gmail.com>
+Source: http://likiworld.blogspot.es
 
 Files: *
 Copyright: (C) 2015 <Liki Liki> <sefirothonu@gmail.com>
-License: UNKNOWN
+License: GPL-3
+ The full text of the GPL is distributed in
+ /usr/share/common-licenses/GPL-3 on Debian systems.

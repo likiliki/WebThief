@@ -16,17 +16,17 @@
 from locale import gettext as _
 
 from gi.repository import Gtk, WebKit # pylint: disable=E0611
+import os
 import logging
 logger = logging.getLogger('webthief')
 
 from webthief_lib import Window
 from webthief.AboutWebthiefDialog import AboutWebthiefDialog
-# from webthief.PreferencesWebthiefDialog import PreferencesWebthiefDialog
+from webthief.AyudaDialog import AyudaDialog
 
 # Variables
 URL = "http://google.es"
 URLfija = "http://google.es"
-URLhelp = "https://github.com/likiliki/WebThief/blob/master/help/C/index.page"
 
 # See webthief_lib.Window.py for more details about how this class works
 class WebthiefWindow(Window):
@@ -37,18 +37,14 @@ class WebthiefWindow(Window):
         super(WebthiefWindow, self).finish_initializing(builder)
 
         self.AboutDialog = AboutWebthiefDialog
-        # self.PreferencesDialog = PreferencesWebthiefDialog
 
         # inicio de objetos utilizados en la aplicacion-----------------------
         self.entryUrl = self.builder.get_object('entryUrl')
         self.botonInicio = self.builder.get_object('botonInicio')
         self.botonRecarga = self.builder.get_object('botonRecarga')
         self.scrolledwindow = self.builder.get_object('scrolledwindow')
-        self.scrolledwindowhelp = self.builder.get_object('scrolledwindowhelp')
         self.toolImg = self.builder.get_object('toolImg')
-        self.toolbar1 = self.builder.get_object('toolbar1')
-        self.windowhelp = self.builder.get_object('windowhelp')
-        self.windowhelp = self.builder.get_object('windowhelp')
+        self.toolbar1 = self.builder.get_object('toolbar1')            
         
         # Configuracion inicial de objetos------------------------------------
         # Web View in ScrollerWindow
@@ -84,5 +80,5 @@ class WebthiefWindow(Window):
 
     # signal - Mostrar ayuda
     def on_helpapp_activate(self, widget):
-        print "muestra ayuda"
-        self.windowhelp.show()
+        ayuda = AyudaDialog()
+        ayuda.show()

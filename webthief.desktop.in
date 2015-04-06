@@ -1,7 +1,7 @@
 [Desktop Entry]
-_Name=Webthief
-_Comment=Webthief application
-Categories=GNOME;Internet;
+_Name=WebThief
+_Comment=Webthief light browser
+Categories=GTK;Network;WebBrowser;
 Exec=webthief
 Icon=webthief
 Terminal=false

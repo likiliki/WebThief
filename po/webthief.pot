@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-05 12:27+0200\n"
+"POT-Creation-Date: 2015-04-07 11:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../data/ui/WebthiefWindow.ui.h:1 ../webthief.desktop.in.h:1
+#: ../data/ui/WebthiefWindow.ui.h:1
 msgid "Webthief"
 msgstr ""
 
@@ -42,7 +42,7 @@ msgid "_Help"
 msgstr ""
 
 #: ../data/ui/WebthiefWindow.ui.h:7
-msgid "Contents"
+msgid "Ayuda de WebThief"
 msgstr ""
 
 #: ../data/ui/WebthiefWindow.ui.h:8
@@ -54,11 +54,23 @@ msgid "Recargar"
 msgstr ""
 
 #: ../data/ui/WebthiefWindow.ui.h:10
-msgid "Status Area"
+msgid "Atras"
+msgstr ""
+
+#: ../data/ui/WebthiefWindow.ui.h:11
+msgid "Siguiente"
+msgstr ""
+
+#: ../data/ui/WebthiefWindow.ui.h:12 ../webthief.desktop.in.h:1
+msgid "WebThief"
+msgstr ""
+
+#: ../data/ui/WebthiefWindow.ui.h:13
+msgid "label"
 msgstr ""
 
 #: ../webthief.desktop.in.h:2
-msgid "Webthief application"
+msgid "Webthief light browser"
 msgstr ""
 
 #: ../webthief/__init__.py:32

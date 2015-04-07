@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: webthief
+Version: 0.1
+Summary: Light Web Browser, With tools for stract multiple tags of webSites.
+Home-page: http://likiworld.blogspot.es
+Author: Liki Liki
+Author-email: sefirothonu@gmail.com
+License: GPL-3
+Description: Light Web Browser, With tools for stract multiple tags of webSites.
+Platform: UNKNOWN
+Requires: gi.repository.GObject
+Requires: gi.repository.Gio
+Requires: gi.repository.Gtk
+Requires: gi.repository.WebKit
+Provides: webthief
+Provides: webthief_lib

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=WebThief
+Comment=Webthief light browser
+Categories=GTK;Network;WebBrowser;
+Exec=webthief
+Icon=webthief
+Terminal=false
+Type=Application

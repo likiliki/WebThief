@@ -1,0 +1,10 @@
+Package: webthief
+Version: 0.1
+Architecture: all
+Maintainer: Liki Liki <sefirothonu@gmail.com>
+Installed-Size: 175
+Depends: dconf-gsettings-backend | gsettings-backend, python (>= 2.7), python (<< 2.8), python:any (>= 2.7.1-0ubuntu2), gir1.2-glib-2.0, gir1.2-gtk-3.0, gir1.2-webkit-3.0, yelp
+Section: python
+Priority: extra
+Description: Light Web Browser, With tools for stract multiple tags of webSites.
+ Light Web Browser, With tools for stract multiple tags of webSites.

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=WebThief
+Comment=Webthief light browser
+Categories=GTK;Network;WebBrowser;
+Exec=/usr/bin/webthief
+Icon=/usr/share/webthief/media/webthief.svg
+Terminal=false
+Type=Application
